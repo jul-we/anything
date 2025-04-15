@@ -1,2 +1,1 @@
-# Welcome to Julian's anything-respo!
-This is just a sandbox for me!
+_This is just a public test repo_
