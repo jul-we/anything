@@ -1,1 +1,1 @@
-_This is just a public test repo_
+_This is just GitHub.io test_
