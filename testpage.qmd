@@ -1,0 +1,32 @@
+---
+title: "Testpage for GitHub"
+author: "ju-we"
+format: html
+editor: visual
+output-file: "index.html"
+---
+
+```{r output=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+## Data for a simple linear regression
+
+```{r}
+n <- 20
+beta <- c(b0 = 1,
+          b1 = 0.5)
+mu <- function(x) beta[1] + beta[2]*x
+dat <- tibble(x = rep(1:5, length.out=n),
+              y = rnorm(n, mean = mu(x), sd = 1)
+              )
+```
+
+## Plot
+
+```{r}
+ggplot(dat, aes(x,y)) +
+  geom_point() +
+  geom_smooth(method="lm")
+```
