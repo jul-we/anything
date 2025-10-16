@@ -158,4 +158,8 @@ restic restore latest --target /tmp/restore
 
 ---
 
-Would you like help with automating backups (cron jobs), remote backups (like Backblaze B2, SFTP, or S3), or encryption tips?
+## Change Password
+
+```bash
+restic -r /path/to/repo key passwd
+```
